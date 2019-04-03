@@ -1,0 +1,121 @@
+html {
+	box-sizing: border-box;
+}
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image: url('../img/d.jpeg');
+	background-size: 100%;
+	font-family: 'Helvetica';
+}
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+
+	display: -webkit-flex;
+	-webkit-flex-wrap: wrap;
+	-webkit-flex-direction: column;
+	
+}
+h1 {
+	font-family: Arial;
+	font-weight: 400px;
+    font-size: 40px;
+    color: #22516d;
+
+}
+i.fa.fa-repeat {
+    margin-top: 20px;
+}
+i.fa.fa-star {
+    margin-bottom: 27px;
+}
+
+.modcont {
+	background-color: #ffffff;
+	margin: auto;
+	padding-top: 10px;
+	border: 2px solid #000;
+	width: 80%;
+}
+.avoid-clicks {
+	pointer-events: none;
+  }
+
+
+
+.deck {
+	width: 660px;
+	min-height: 680px;
+	background: linear-gradient(160deg, #02ccba 0%, #e9e6ea 100%);
+	padding: 32px;
+	border-radius: 10px;
+	box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 0 3em;
+}
+.deck .card {
+    height: 130px;
+    width: 130px;
+    background: #160c3b96;
+    font-size: 0;
+    color: #ffffff;
+    border-radius: 12px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+.deck .card.open {
+	transform: rotateY(0);
+    background: #3a53e8;
+	cursor: default;
+}
+.deck .card.show {
+	font-size: 33px;
+}
+.deck .card.match {
+	cursor: default;
+	background: #02ccba;
+	font-size: 33px;
+}
+
+.score-panel {
+	text-align: center;
+	width: 345px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+.score-panel .stars {
+	margin: 0;
+	padding: 0;
+	display: block;
+	margin: 0 5px 0 0;
+}
+.score-panel .stars li {
+	list-style: none;
+	display: inline-block;
+}
+
+.score-panel .timer {
+/*    margin-left: 12px;*/
+	padding-left: 12px;
+}
+.score-panel .restart {
+	float: center;
+	cursor: pointer;
+}
